@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using CodeMonkey.Utils;
+using UnityEngine.SceneManagement;
 
 public class EnemyPatrol : MonoBehaviour
 {
@@ -43,10 +44,10 @@ public class EnemyPatrol : MonoBehaviour
 
         if (HealthPoints.currentHealth == 0)
         {
-            Debug.Log("Te machetiaron");
+            SceneManager.LoadScene("GameOverScene");
         }
     }
-   
+
 
 }
 

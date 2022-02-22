@@ -8,4 +8,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Manor.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/StartGame.unity
+    guid: b89a6552e191d1e4d9128c575864f201
+  - enabled: 1
+    path: Assets/Scenes/youWonScene.unity
+    guid: b696989b6f64fff43b7deae722132ed2
+  - enabled: 1
+    path: Assets/Scenes/GameOverScene.unity
+    guid: f84e7fde24cd004419631733b14d4d3e
   m_configObjects: {}

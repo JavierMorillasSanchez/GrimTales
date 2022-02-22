@@ -17,7 +17,6 @@ public class SigilController : Sigil
 
         if (sigilActive == true)
         {
-            Debug.Log("Circulo desactivado");
             sigilActive = false;
             mySpriteRenderer.material = unactiveMaterial;
             bondedSigils();
@@ -25,7 +24,6 @@ public class SigilController : Sigil
         else
         {
 
-            Debug.Log("Circulo activado");
             sigilActive = true;
             mySpriteRenderer.material = activeMaterial;
             bondedSigils();

@@ -81,10 +81,11 @@
     <Compile Include="Assets\Scripts\EnviromentFolder\EnviromentController.cs" />
     <Compile Include="Assets\CodeMonkey\MonoBehaviours\ComponentActions.cs" />
     <Compile Include="Assets\CodeMonkey\Utils\UI_Sprite.cs" />
+    <Compile Include="Assets\Scripts\PlayerFolder\HealthController.cs" />
     <Compile Include="Assets\CodeMonkey\Utils\UI_BarMultiple.cs" />
     <Compile Include="Assets\CodeMonkey\CMDebug.cs" />
     <Compile Include="Assets\CodeMonkey\Utils\FunctionPeriodic.cs" />
-    <Compile Include="Assets\Scripts\PlayerFolder\HealthController.cs" />
+    <Compile Include="Assets\Scripts\UIScripts\StartMenuController.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\CodeMonkey\README.txt" />

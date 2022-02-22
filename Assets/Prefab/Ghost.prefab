@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5783508429008879150}
   - component: {fileID: 5746213906366676180}
   - component: {fileID: 1087014989537758665}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ghost
   m_TagString: Ghost
   m_Icon: {fileID: 0}
@@ -102,6 +102,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   Speed: 2
+  HealthPoints: {fileID: 0}
 --- !u!95 &5783508429008879150
 Animator:
   serializedVersion: 3
@@ -155,6 +156,6 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.22472394, y: 0.40000004}
+  m_Offset: {x: -0.0008587837, y: 0.0008587837}
+  m_Size: {x: 0.32262927, y: 0.45324692}
   m_Direction: 0
