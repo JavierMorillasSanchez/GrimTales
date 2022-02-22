@@ -29,6 +29,13 @@ public class StartMenuController : MonoBehaviour
 
     }
 
+    public void playToMenu()
+    {
+        Negate.Play();
+        SceneManager.LoadScene("StartGame");
+
+    }
+
 
 
 }
