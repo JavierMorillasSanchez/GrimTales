@@ -8,9 +8,16 @@ public class SigilController : Sigil
     public Sigil bondedSigil1;
     public Sigil bondedSigil2;
 
-    public bool lastValue;
-    public bool newValue;
+    private AudioSource activateSigil;
+    private AudioSource deActivateSigil;
 
+    private void Awake()
+    {
+
+        activateSigil = GetComponent<AudioSource>();
+        deActivateSigil = GetComponent<AudioSource>();
+
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -18,6 +25,7 @@ public class SigilController : Sigil
         if (sigilActive == true)
         {
             sigilActive = false;
+            deActivateSigil.Play();
             mySpriteRenderer.material = unactiveMaterial;
             bondedSigils();
         }
@@ -25,6 +33,7 @@ public class SigilController : Sigil
         {
 
             sigilActive = true;
+            activateSigil.Play();
             mySpriteRenderer.material = activeMaterial;
             bondedSigils();
       

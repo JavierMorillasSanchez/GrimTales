@@ -11,12 +11,15 @@ public class EnemyPatrol : MonoBehaviour
     int current;
     public float Speed;
     public HealthController HealthPoints;
+    private AudioSource GhostDamage;
 
     private void Awake()
     {
         current = 0;
 
         InvokeRepeating("UpdateTarget", 1f, 1.5f);
+
+        GhostDamage = GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -40,6 +43,7 @@ public class EnemyPatrol : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        GhostDamage.Play();
         HealthPoints.takeDamage(1);
 
         if (HealthPoints.currentHealth == 0)
